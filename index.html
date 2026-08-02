@@ -1,14 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Kiki Workspace - Timesheet</title>
-  <!-- Otomatis Redirect ke Apps Script kamu -->
-  <script type="text/javascript">
-    window.location.href = "https://script.google.com/macros/s/AKfycbwCoMJ9nYWdxI2BCO0sklWAHiTgv9ZXMMLjI6bk-jcoXB9sTBmYZ3bVuBpRMKafVoqk/exec";
-  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Kiki Workspace</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden; /* Menghilangkan double scrollbar */
+      background-color: #f8fafc;
+    }
+    
+    /* TRUK EMBED IFRAME FULLSCREEN */
+    .app-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
 </head>
-<body style="font-family: sans-serif; text-align: center; padding-top: 50px;">
-  <p>Mengarahkan ke Timesheet Workspace...</p>
+<body>
+
+  <div class="app-container">
+    <!-- Ganti src di bawah dengan URL Apps Script kamu -->
+    <iframe 
+      src="https://script.google.com/macros/s/AKfycbwCoMJ9nYWdxI2B.../exec" 
+      allow="geolocation; microphone; camera">
+    </iframe>
+  </div>
+
 </body>
 </html>
